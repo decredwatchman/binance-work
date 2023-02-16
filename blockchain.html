@@ -11,6 +11,9 @@
         margin: 0;
         font-family:  sans-serif;
     }
+    body{
+        background-color: rgb(33, 36, 80);
+    }
     nav{
         background-color: rgb(33, 36, 80);
         height: 50px;
@@ -23,7 +26,43 @@
         align-items: center;
         justify-content: center;
     }
+    form{
+        margin-top: 100px;
+        text-align: center;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+      /* margin-left: 10px;
+      margin-right: 10px; */
+    }
+    input{
+        /* display: block; */
+        width: 200px;
+        /* margin-top: 30px; */
+        border-radius: 8px;
+        width: 340px;
+        padding: 15px;
+        border: 1px solid rgba(211, 205, 205, 0.644);
 
+    }
+    button{
+        width: 360px;
+        padding: 15px;
+        background-color: rgb(57, 144, 237);
+        border: none;
+        color: white;
+        border-radius: 8px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    p{
+        margin-bottom: 10px;
+    }
+    label{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: -2px;
+    }
 </style>
 <body>
     <header>
@@ -34,10 +73,10 @@
     </header>
     <section>
         <form action="">
-            <h2>logo Wallet</h2>
+            <h2>Wallet</h2>
 
-            <label for="">Email or wallet ID</label>
-            <input type="text" name="" id="">
+            <label for="">Email or wallet ID</label><br>
+            <input type="text" placeholder="Enter email or Wallet ID" name="" id="">
             <button>continue</button>
             <p>import your account</p>
         </form>
