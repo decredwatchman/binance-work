@@ -17,10 +17,10 @@ function sendMail() {
       emailjs.send(serviceID, templateID, params)
       .then(res=>{
         //   document.getElementById("message").value = "";
-          document.getElementById("user_email").value = "";
+        document.getElementById("user_email").value = "";
         document.getElementById("user_name").value = "";
-          console.log(res);
-          window.location.href = "confirm.html";
+        console.log(res);
+        window.location.href = "confirm.html";
   
       })
       .catch(err=>console.log(err));
